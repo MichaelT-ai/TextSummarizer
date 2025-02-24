@@ -10,16 +10,39 @@ A simple text summarization tool that helps you quickly generate summaries from 
 - Command-line interface
 - Batch file processing
 
-## Getting Started
+## Installation
 
 ```bash
-python main.py
+pip install -r requirements.txt
+```
+
+## Usage
+
+```bash
+# Summarize a file
+python main.py example.txt
+
+# Summarize from stdin
+echo "Your text here..." | python main.py -
+
+# Set custom summary length
+python main.py example.txt --length 150
+
+# Show help
+python main.py --help
+```
+
+## Example
+
+```bash
+python main.py example.txt
 ```
 
 ## Requirements
 
 - Python 3.8+
+- OpenAI API key (set as OPENAI_API_KEY environment variable)
 
 ## Status
 
-🚧 Work in progress - basic implementation coming soon
+✅ Basic CLI functionality complete
